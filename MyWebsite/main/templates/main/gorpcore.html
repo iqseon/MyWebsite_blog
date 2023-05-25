@@ -1,0 +1,49 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+  <header>
+    <h1 style="text-align: center; color: #333;">Gorpcore Мода</h1>
+    <nav style="text-align: center;">
+      <ul style="list-style: none; padding: 0;">
+        <li style="display: inline-block; margin-right: 10px;"><a href="#about" style="text-decoration: none; color: #333;">О нас</a></li>
+        <li style="display: inline-block; margin-right: 10px;"><a href="#trends" style="text-decoration: none; color: #333;">Тенденции</a></li>
+        <li style="display: inline-block; margin-right: 10px;"><a href="#outfits" style="text-decoration: none; color: #333;">Образы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" style="padding: 40px 0;">
+    <h2 style="text-align: center; color: #333;">О нас</h2>
+    <p style="text-align: center;">Здесь вы можете узнать больше о Gorpcore стиле моды и его особенностях.</p>
+  </section>
+
+  <section id="trends" style="padding: 40px 0;">
+    <h2 style="text-align: center; color: #333;">Тенденции</h2>
+    <ul style="text-align: center; padding: 0; list-style: none;">
+      <li style="margin-bottom: 10px;">Функциональные и прочные материалы</li>
+      <li style="margin-bottom: 10px;">Вдохновение от активного отдыха и спорта</li>
+      <li style="margin-bottom: 10px;">Сочетание уличного стиля и технических деталей</li>
+    </ul>
+  </section>
+
+  <section id="outfits" style="padding: 40px 0;">
+  <h2 style="text-align: center; color: #333;">Образы</h2>
+  <div class="outfit" style="text-align: center; margin-bottom: 40px;">
+    <h3 style="color: #333;">Повседневный образ</h3>
+    <img src="https://i.pinimg.com/originals/29/8d/85/298d856100dbe5566b9aabc17b60b8a3.jpg" alt="Повседневный образ" style="width: 100%; max-width: 500px; height: auto;">
+    <p style="text-align: justify; text-indent: 1.25em; max-width: 500px; margin: 0 auto;">Когда глянцевые редакторы пишут о появлении нового стиля, они обычно просто дают название тому, что уже существует и активно развивается. Так в 2017 году произошло с горпкором: редактор The Cut Джейсон Чен заметил, как в моде набирает обороты аутдор-эстетика, и решил это зафиксировать, придумав новый термин. Название прижилось — а заодно и сам стиль, который оказался куда более живучим, чем все изначально думали. Рассказываем все, что нужно знать о горпкоре, который 4 года спустя все еще доминирует в модной индустрии.</p>
+  </div>
+  <div class="outfit" style="text-align: center;">
+    <h3 style="color: #333;">Спортивный образ</h3>
+    <img src="https://i.pinimg.com/originals/f0/c1/6a/f0c16aa4998fea7abceb0e6699afe5e9.jpg" alt="Спортивный образ" style="width: 100%; max-width: 500px; height: auto;">
+    <p style="text-align: justify; text-indent: 1.25em; max-width: 500px; margin: 0 auto;">Цветовая гамма горпкора — это природные цвета. Либо очень яркие, либо, напротив, нейтральные и практичные — вроде оливкового, хаки, темно-коричневого и бежевого. Эти две цветовые палитры часто пересекаются в одном и том же образе: скажем, пуховик может быть ярким, даже неоновым, а брюки — бежевыми или цвета хаки. Впрочем, адепты горпкора не преследуют цели как-то по-особенному сочетать цвета. Они носят одежду, которая предназначена для того, чтобы в ней проводить время на природе — потому она будто эхом отражает цвета этой самой природы.</p>
+  </div>
+</section>
+  <footer style="text-align: center; background-color: #f5f5f5; padding: 20px;">
+    <p style="color: #666;">© 2023 Gorpcore Мода. Все права защищены.</p>
+  </footer>
+{% endblock %}

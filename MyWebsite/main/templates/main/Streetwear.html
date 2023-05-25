@@ -1,0 +1,57 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<head>
+  <title>Streetwear Мода</title>
+</head>
+<div class="top-banner__inner site-container">
+    <div class="container">
+<body>
+  <header>
+    <h1 style="text-align: center; color: #333;">Streetwear Мода</h1>
+    <nav style="text-align: center;">
+      <ul style="list-style: none; padding: 0;">
+        <li style="display: inline-block; margin-right: 10px;"><a href="#about" style="text-decoration: none; color: #333;">О нас</a></li>
+        <li style="display: inline-block; margin-right: 10px;"><a href="#trends" style="text-decoration: none; color: #333;">Тенденции</a></li>
+        <li style="display: inline-block; margin-right: 10px;"><a href="#outfits" style="text-decoration: none; color: #333;">Образы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" style="padding: 40px 0;">
+    <h2 style="text-align: center; color: #333;">О нас</h2>
+    <p style="text-align: center;">Здесь вы можете узнать больше о Streetwear стиле моды и его особенностях.</p>
+  </section>
+
+  <section id="trends" style="padding: 40px 0;">
+    <h2 style="text-align: center; color: #333;">Тенденции</h2>
+    <ul style="text-align: center; padding: 0; list-style: none;">
+      <li style="margin-bottom: 10px;">Функциональные и прочные материалы</li>
+      <li style="margin-bottom: 10px;">Вдохновение от активного отдыха и спорта</li>
+      <li style="margin-bottom: 10px;">Сочетание уличного стиля и технических деталей</li>
+    </ul>
+  </section>
+
+  <section id="outfits" style="padding: 40px 0;">
+    <h2 style="text-align: center; color: #333;">Образы</h2>
+    <div class="outfit" style="text-align: center; margin-bottom: 40px;">
+      <h3 style="color: #333;">Повседневный образ</h3>
+      <img src="https://i.pinimg.com/736x/ae/b6/35/aeb63546e8637cd0e2229a7aacf2bfc1.jpg" alt="Повседневный образ" style="width: 100%; max-width: 500px; height: auto;">
+      <p style="text-align: center;">Описание повседневного образа в стиле Streetwear.</p>
+    </div>
+    <div class="outfit" style="text-align: center;">
+      <h3 style="color: #333;">Летний образ</h3>
+      <img src="https://i.pinimg.com/originals/de/6d/5a/de6d5a86532a5b7616ddd405de409258.jpg" alt="Летний образ" style="width: 100%; max-width: 500px; height: auto;">
+      <p style="text-align: center;">Описание летнего образа в стиле Streetwear.</p>
+    </div>
+  </section>
+
+  <footer style="text-align: center; background-color: #f5f5f5; padding: 20px;">
+    <p style="color: #666;">© 2023 Streetwear Мода. Все права защищены.</p>
+  </footer>
+</body>
+{% endblock %}

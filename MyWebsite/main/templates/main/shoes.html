@@ -1,0 +1,33 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Добавить обувь
+{% endblock %}
+
+{% block content %}
+<h1>Добавить обувь</h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.title }}<br>
+    {{ form.shoe }}<br>
+    <input type="file" id="shoe-image-input" name="shoe_image" accept="image/*">
+    <button type="submit" class="btn btn-success">Добавить</button>
+    <img id="shoe-image-preview" src="" alt="Фото обуви" class="ms-2" width="100" height="100">
+    <span>{{ error }}</span>
+</form>
+    
+<script>
+    // Обработчик события для загрузки и отображения выбранного изображения
+    document.getElementById('shoe-image-input').addEventListener('change', function(event) {
+        var input = event.target;
+        var reader = new FileReader();
+
+        reader.onload = function(){
+            var shoeImagePreview = document.getElementById('shoe-image-preview');
+            shoeImagePreview.src = reader.result;
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    });
+</script>
+{% endblock %}
