@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoes</title>
+  <link rel="stylesheet" href="static/css/shoes.css">
+  <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    h1 {
+      color: #FFFFFF; /* Цвет заголовка */
+      text-align: center; /* Выравнивание по центру */
+      margin-top: 20px; /* Отступ сверху */
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <h1>Обувь</h1>
+    <div class="position-fixed top-0 start-0 bottom-0 p-3 bg-white" style="width: 280px;">
+  <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+    <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+    <span class="fs-5 fw-semibold">Collapsible</span>
+  </a>
+  <ul class="list-unstyled ps-0">
+    <li class="mb-1">
+      <a href="/" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+        Главная
+      </a>
+      <div class="collapse" id="home-collapse" style="">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a href="#" class="link-dark rounded">Overview</a></li>
+          <li><a href="#" class="link-dark rounded">Updates</a></li>
+          <li><a href="#" class="link-dark rounded">Reports</a></li>
+        </ul>
+      </div>
+    </li>
+      <li class="mb-1">
+        <a class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Бренды
+        </a>
+        <div class="collapse" id="dashboard-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">Gucchi</a></li>
+            <li><a href="#" class="link-dark rounded">Zara</a></li>
+            <li><a href="#" class="link-dark rounded">Beshka</a></li>
+            <li><a href="#" class="link-dark rounded">H&M</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          Образы
+        </button>
+        <div class="collapse" id="orders-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">New</a></li>
+            <li><a href="#" class="link-dark rounded">Одежда</a></li>
+            <li><a href="#" class="link-dark rounded">Обувь</a></li>
+            <li><a href="#" class="link-dark rounded">Аксессуары</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          Профиль
+        </button>
+        <div class="collapse" id="account-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">New...</a></li>
+            <li><a href="#" class="link-dark rounded">Profile</a></li>
+            <li><a href="#" class="link-dark rounded">Settings</a></li>
+            <li><a href="#" class="link-dark rounded">Sign out</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+  </header>
+<div class="container">
+    <section class="shoes">
+      <div class="shoe">
+        <img src="https://i.pinimg.com/564x/6b/18/e0/6b18e0f626bf4d5998696964b176aad8.jpg" alt="MR530 'Grey'">
+        <h2>MR530 'Grey'</h2>
+        <p>Initially released in 1992, the shoe continues to deliver a sporty 90s look through all the silver accents that can be found on many of its newest colorways.</p>
+      </div>
+      <div class="shoe">
+        <img src="https://i.pinimg.com/564x/77/1a/74/771a74f5acdd487b0681ea9e71f191e6.jpg" alt="New Balance 990v3 Grey">
+        <h2>MR530 'Grey'</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt hendrerit lacinia. Vivamus interdum urna in magna feugiat, id facilisis odio eleifend.</p>
+      </div>
+      <div class="shoe">
+        <img src="https://i.pinimg.com/564x/af/e5/b1/afe5b16a34c63d6165ebda9dee268ae1.jpg" alt="Nike Dunk Low AE86 Concept">
+        <h2>Nike Dunk Low AE86</h2>
+        <p>Inspired by the Fujiwara Tofu Shop car from 'Initial D.'</p>
+      </div>
+    </section>
+</body>
+</html>

@@ -1,4 +1,5 @@
 from django.db import models
+from pip._internal.vcs import git
 
 
 class Shoes(models.Model):
@@ -9,7 +10,10 @@ class Shoes(models.Model):
     def __str__(self):
         return self.title
 
-    class Meta:
-        verbose_name = 'Обувь'
-        verbose_name_plural = 'Обувь'
 
+class UserAddress:
+    pass
+
+
+class UserPhoneNumber:
+    pass

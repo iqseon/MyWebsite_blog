@@ -28,6 +28,10 @@ def streetwear(requests):
 
 def gorpcore(requests):
     return render(requests, 'main/gorpcore.html')
+def shoes_str(requests):
+    return render(requests, 'main/shoes_str.html')
+def brands(requests):
+    return render(requests, 'main/brands.html')
 
 def shoes(requests):
     error = ''

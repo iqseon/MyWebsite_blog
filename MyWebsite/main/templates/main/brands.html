@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brands</title>
+  <link rel="stylesheet" href="static/css/brands.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <style>
+    h1 {
+      color: #FFFFFF; /* Цвет заголовка */
+      text-align: center; /* Выравнивание по центру */
+      margin-top: 20px; /* Отступ сверху */
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Бренды</h1>
+    <div class="position-fixed top-0 start-0 bottom-0 p-3 bg-white" style="width: 280px;">
+  <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+    <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+    <span class="fs-5 fw-semibold">Collapsible</span>
+  </a>
+  <ul class="list-unstyled ps-0">
+    <li class="mb-1">
+      <a href="/" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+        Главная
+      </a>
+      <div class="collapse" id="home-collapse" style="">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a href="#" class="link-dark rounded">Overview</a></li>
+          <li><a href="#" class="link-dark rounded">Updates</a></li>
+          <li><a href="#" class="link-dark rounded">Reports</a></li>
+        </ul>
+      </div>
+    </li>
+      <li class="mb-1">
+        <a class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Бренды
+        </a>
+        <div class="collapse" id="dashboard-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">Gucchi</a></li>
+            <li><a href="#" class="link-dark rounded">Zara</a></li>
+            <li><a href="#" class="link-dark rounded">Beshka</a></li>
+            <li><a href="#" class="link-dark rounded">H&M</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          Образы
+        </button>
+        <div class="collapse" id="orders-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">New</a></li>
+            <li><a href="#" class="link-dark rounded">Одежда</a></li>
+            <li><a href="#" class="link-dark rounded">Обувь</a></li>
+            <li><a href="#" class="link-dark rounded">Аксессуары</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          Профиль
+        </button>
+        <div class="collapse" id="account-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">New...</a></li>
+            <li><a href="#" class="link-dark rounded">Profile</a></li>
+            <li><a href="#" class="link-dark rounded">Settings</a></li>
+            <li><a href="#" class="link-dark rounded">Sign out</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+  </header>
+
+  <section class="brands">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="brand">
+            <img src="https://i.pinimg.com/564x/48/64/fd/4864fd205ac63a7663224b8c1f8baed2.jpg" alt="Brand 1" class="brand-image">
+            <h2>ZARA</h2>
+            <p>ZARA - это известный испанский бренд, специализирующийся на модной одежде и аксессуарах. Они предлагают широкий ассортимент стильных и современных коллекций, которые сочетают в себе высокое качество, актуальные тренды и доступные цены.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="brand">
+            <img src="https://i.pinimg.com/564x/a8/a1/61/a8a161226b498829b99c8f6858e513b4.jpg" alt="Brand 2" class="brand-image">
+            <h2>GUCCI</h2>
+            <p>GUCCI - это престижный итальянский бренд, известный своим роскошным итальянским стилем и высоким качеством изделий. Они специализируются на модных аксессуарах, одежде и обуви, предлагая элегантные и утонченные дизайны, которые воплощают классическую эстетику и роскошь.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="brand">
+            <img src="https://i.pinimg.com/564x/71/b4/ce/71b4ce8b3390ebce5100cbc239b51aeb.jpg" alt="Brand 3" class="brand-image">
+            <h2>CALVIN KLEIN</h2>
+            <p>CALVIN KLEIN - это американский бренд, известный своим минималистичным и современным стилем. Они известны своей одеждой, аксессуарами и парфюмерией, которые отражают чистоту линий, инновационный дизайн и смелый подход к моде. Коллекции CALVIN KLEIN часто характеризуются сдержанными цветами и элегантными силуэтами.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="brand">
+            <img src="https://i.pinimg.com/736x/57/7e/07/577e0712b26a7f9ab959a9a0f44148c4.jpg" alt="Brand 4" class="brand-image">
+            <h2>H&M</h2>
+            <p>H&M - это шведский бренд быстрой моды, который известен своим разнообразным ассортиментом модной одежды и аксессуаров по доступным ценам. H&M предлагает широкий выбор стилей, от повседневной одежды до вечерних нарядов, а также коллекции для мужчин, женщин и детей. Бренд привержен тому, чтобы предлагать модные и качественные товары с учетом последних тенденций</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="brand">
+            <img src="https://i.pinimg.com/564x/f3/9b/18/f39b184a032f9a281723cb8f0e21ecf2.jpg" alt="Brand 5" class="brand-image">
+            <h2>NIKE</h2>
+            <p> Nike - это американский спортивный бренд, знаменитый своей инновационной спортивной одеждой, обувью и аксессуарами. Nike является одним из самых узнаваемых брендов в мире спорта и активного образа жизни. Они предлагают широкий ассортимент продуктов для различных видов спорта, включая баскетбол, футбол, бег и фитнес. </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="brand">
+            <img src="https://i.pinimg.com/564x/fe/3a/62/fe3a623e558dd1744eb9167d21dc3f3d.jpg" alt="Brand 6" class="brand-image">
+            <h2>ADIDAS</h2>
+            <p> Adidas - это немецкий спортивный бренд, известный своей спортивной одеждой, обувью и аксессуарами. Adidas предлагает широкий выбор продуктов для различных видов спорта, включая футбол, баскетбол, теннис и бег. Бренд известен своим узнаваемым логотипом с тремя полосками и инновационными технологиями, которые обеспечивают комфорт, поддержку и производительность при занятии спортом.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-jBeXZC5uFyK8cchq2YTITxMbfHLVb4nGZ/fm5MFm8YrFr5ifMG1HNqz9HtXOYLNl" crossorigin="anonymous"></script>
+</body>
+</html>

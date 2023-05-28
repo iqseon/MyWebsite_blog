@@ -1,0 +1,24 @@
+element.style {
+    width: 280px;
+}
+.p-3 {
+    padding: 1rem!important;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0!important;
+}
+.flex-column {
+    flex-direction: column!important;
+}
+.d-flex {
+    display: flex!important;
+}
+.text-bg-dark {
+    color: #fff!important;
+    background-color: RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}

@@ -10,10 +10,11 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
-
-  <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/gorpcore.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/slidebar.css' %}" type="text/css">
+  <link rel="stylesheet" href ="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-TmFQ7wWfhLf0QENn3p8RY2e9f+fz9cnHqMK8dKbjaMWqD4nAPdUfOy8fDqjItHdo" crossorigin="anonymous"></script>
 </head>
 <body>
     <header
@@ -21,10 +22,10 @@
         <div class="container d-flex flex-wrap">
       <ul class="nav me-auto">
         <li class="nav-item"><a href="/" class="nav-link link-dark px-2 active" aria-current="page">Главная</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Бренды</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Одежда</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Обувь</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Аксессуары</a></li>
+        <li class="nav-item"><a href="brands.html" class="nav-link link-dark px-2">Бренды</a></li>
+        <li class="nav-item"><a href="close.html" class="nav-link link-dark px-2">Одежда</a></li>
+        <li class="nav-item"><a href="shoes_str.html" class="nav-link link-dark px-2">Обувь</a></li>
+        <li class="nav-item"><a href="accessories.html" class="nav-link link-dark px-2">Аксессуары</a></li>
       </ul>
       <ul class="nav">
         <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Вход</a></li>
@@ -49,10 +50,10 @@
   </a>
   <ul class="list-unstyled ps-0">
     <li class="mb-1">
-      <a href="/" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#Home-collapse" aria-expanded="false">
         Главная
-      </a>
-      <div class="collapse" id="home-collapse" style="">
+      </button>
+      <div class="collapse" id="Home-collapse" style="">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           <li><a href="#" class="link-dark rounded">Overview</a></li>
           <li><a href="#" class="link-dark rounded">Updates</a></li>
@@ -61,10 +62,10 @@
       </div>
     </li>
       <li class="mb-1">
-        <a class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#Brands-collapse" aria-expanded="false">
           Бренды
-        </a>
-        <div class="collapse" id="dashboard-collapse" style="">
+        </button>
+        <div class="collapse" id="Brands-collapse" style="">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li><a href="#" class="link-dark rounded">Gucchi</a></li>
             <li><a href="#" class="link-dark rounded">Zara</a></li>
@@ -75,7 +76,7 @@
       </li>
       <li class="mb-1">
         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-          Категории
+          Другое
         </button>
         <div class="collapse" id="orders-collapse" style="">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -89,7 +90,7 @@
       <li class="border-top my-3"></li>
       <li class="mb-1">
         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-          Профиль
+          Образы
         </button>
         <div class="collapse" id="account-collapse" style="">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
